@@ -263,6 +263,13 @@ const matrix = [
   [20, 73, 35, 29, 78, 31, 90, 01, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 05, 54],
   [01, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 01, 89, 19, 67, 48]
 ];
+
+let compareArr = []
+for (var i = 0; i < ridArr.length; i++) {
+  compareArr.push([ridArr[i], ridArr[i+1], ridArr[i+2], ridArr[i+3]]);
+  compareArr.push([ridArr[i], ridArr[i-1], ridArr[i-2], ridArr[i-3]]);
+  compareArr.push([ridArr[i], ridArr[i-1], ridArr[i+1], ridArr[i+2]]);
+  compareArr.push([ridArr[i], ridArr[i-2], ridArr[i-1], ridArr[i+1]]);
 ```
 
 ### Bonus - Iteration #8.1: Product of diagonals
